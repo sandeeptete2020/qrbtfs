@@ -22,6 +22,7 @@
     "serialize-javascript": "^3.1.0"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,7 +43,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "./",
+  "homepage": "/",
   "devDependencies": {
     "reactcss": "^1.2.3",
     "redux-devtools": "^3.5.0",
