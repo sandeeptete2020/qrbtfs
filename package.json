@@ -48,4 +48,7 @@
     "redux-devtools": "^3.5.0",
     "tcb-js-sdk": "^1.6.1"
   }
+   "engines": {
+    "node": ">=15.8.0"
+  }
 }
