@@ -116,16 +116,16 @@ function getParamInfoFuncA() {
     return [
         {
             type: ParamTypes.SELECTOR,
-            key: '信息点样式',
+            key: 'Info Point Style',
             default: 1,
             choices: [
-                "矩形",
-                "圆形",
+                "Rectangle",
+                "Circle",
             ]
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '干扰函数',
+            key: 'Interference Function',
             default: 0,
             choices: [
                 "A",
@@ -134,52 +134,53 @@ function getParamInfoFuncA() {
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点不透明度',
+            key: 'Info Point Opacity',
             default: 100,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'Locator Point Style',
             default: 1,
             choices: [
-                "矩形",
-                "圆形",
-                "行星",
-                "圆角矩形",
+                "Rectangle",
+                "Circle",
+                "Planet",
+                "Rounded Rectangle",
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点颜色 1',
+            key: 'Info Point Color 1',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点颜色 2',
+            key: 'Info Point Color 2',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'Locator Point Color',
             default: '#000000'
         }
     ];
 }
 
+
 function getParamInfoFuncB() {
     return [
         {
             type: ParamTypes.SELECTOR,
-            key: '信息点样式',
+            key: 'Info Point Style',
             default: 1,
             choices: [
-                "矩形",
-                "圆形",
+                "Rectangle",
+                "Circle",
             ]
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '干扰函数',
+            key: 'Interference Function',
             default: 1,
             choices: [
                 "A",
@@ -188,37 +189,38 @@ function getParamInfoFuncB() {
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点不透明度',
+            key: 'Info Point Opacity',
             default: 100,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'Locator Point Style',
             default: 1,
             choices: [
-                "矩形",
-                "圆形",
-                "行星",
-                "圆角矩形",
+                "Rectangle",
+                "Circle",
+                "Planet",
+                "Rounded Rectangle",
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点颜色 1',
+            key: 'Info Point Color 1',
             default: '#ABB8C3'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点颜色 2',
+            key: 'Info Point Color 2',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'Locator Point Color',
             default: '#000000'
         }
     ];
 }
+
 
 
 export const RendererFuncA= createRenderer({
@@ -236,5 +238,6 @@ RendererFuncA.detail = (
 );
 
 RendererFuncB.detail = (
-    <div>线干扰</div>
+    <div>Line Interference</div>
 );
+

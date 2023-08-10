@@ -164,30 +164,31 @@ function getParamInfo() {
     return [
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点缩放',
+            key: 'Info Point Scale',
             default: 70,
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: 'x 宽度',
+            key: 'x Width',
             default: 70,
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '定位点宽度',
+            key: 'Locator Point Width',
             default: 90,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'Locator Point Style',
             default: 1,
             choices: [
-                "矩形",
+                "Rectangle",
                 "DSJ",
             ]
         },
-    ]
+    ];
 }
+
 
 const RenderDSJ = createRenderer({
     listPoints: listPoints,

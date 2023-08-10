@@ -95,139 +95,142 @@ function getParamInfoRect() {
     return [
         {
             type: ParamTypes.SELECTOR,
-            key: '信息点样式',
+            key: 'Info Point Style',
             default: 0,
             choices: [
-                "矩形",
-                "圆形",
-                "随机"
+                "Rectangle",
+                "Circle",
+                "Random"
             ]
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点缩放',
+            key: 'Info Point Scale',
             default: 100
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点不透明度',
+            key: 'Info Point Opacity',
             default: 100,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'Locator Point Style',
             default: 0,
             choices: [
-                "矩形",
-                "圆形",
-                "行星",
-                "圆角矩形",
+                "Rectangle",
+                "Circle",
+                "Planet",
+                "Rounded Rectangle",
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点颜色',
+            key: 'Info Point Color',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'Locator Point Color',
             default: '#000000'
         }
     ];
 }
+
 
 function getParamInfoRound() {
     return [
         {
             type: ParamTypes.SELECTOR,
-            key: '信息点样式',
+            key: 'Info Point Style',
             default: 1,
             choices: [
-                "矩形",
-                "圆形",
-                "随机"
+                "Rectangle",
+                "Circle",
+                "Random"
             ]
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点缩放',
+            key: 'Info Point Scale',
             default: 50
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点不透明度',
+            key: 'Info Point Opacity',
             default: 30,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'Locator Point Style',
             default: 1,
             choices: [
-                "矩形",
-                "圆形",
-                "行星",
-                "圆角矩形",
+                "Rectangle",
+                "Circle",
+                "Planet",
+                "Rounded Rectangle",
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点颜色',
+            key: 'Info Point Color',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'Locator Point Color',
             default: '#000000'
         }
     ];
 }
 
+
 function getParamInfoRandRound() {
     return [
         {
             type: ParamTypes.SELECTOR,
-            key: '信息点样式',
+            key: 'Info Point Style',
             default: 2,
             choices: [
-                "矩形",
-                "圆形",
-                "随机"
+                "Rectangle",
+                "Circle",
+                "Random"
             ]
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点缩放',
+            key: 'Info Point Scale',
             default: 80
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点不透明度',
+            key: 'Info Point Opacity',
             default: 100,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'Locator Point Style',
             default: 2,
             choices: [
-                "矩形",
-                "圆形",
-                "行星",
-                "圆角矩形",
+                "Rectangle",
+                "Circle",
+                "Planet",
+                "Rounded Rectangle",
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点颜色',
+            key: 'Info Point Color',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'Locator Point Color',
             default: '#000000'
         }
     ];
 }
+
 
 export const RendererRect = createRenderer({
     listPoints: listPoints,

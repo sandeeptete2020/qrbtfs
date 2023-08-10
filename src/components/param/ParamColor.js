@@ -34,7 +34,7 @@ const ParamColor = ({ rendererIndex, paramIndex, value, onChange }) => {
     return (
         <div style={styles.container}>
             <button className="dl-btn" style={styles.btn} onClick={ () => setDisplay(!displayColorPicker) }>
-                选择颜色
+                choose the color
             </button>
             {
                 displayColorPicker ?
