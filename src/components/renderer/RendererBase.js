@@ -245,13 +245,13 @@ export const RendererRandRound = createRenderer({
 });
 
 RendererRect.detail = (
-    <div>最基本的二维码，也有有趣的玩法</div>
+    <div>The most basic QR code, but also interesting ways to play</div>
 );
 
 RendererRound.detail = (
-    <div>大厂喜欢的样式，非常适合在中间放置 Logo</div>
+    <div>The style that Dachang likes, very suitable for placing in the middle Logo</div>
 );
 
 RendererRandRound.detail = (
-    <div>随机圆点，混乱与秩序。源于 <LinkTrace href="https://ncf.cz-studio.cn/" rel="noopener noreferrer" target="_blank">NCFZ</LinkTrace></div>
+    <div>Random dots, chaos and order. from <LinkTrace href="https://ncf.cz-studio.cn/" rel="noopener noreferrer" target="_blank">NCFZ</LinkTrace></div>
 );
