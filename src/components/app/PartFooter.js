@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
 const PartFooter = () => (
     <div className="Qr-titled">
         <div className="Qr-Centered Qr-footer note-font">
-            <div className="Qr-footer-part">
+            <div style={{display: "none"}} className="Qr-footer-part">
                 <strong>作者</strong>&emsp;
                 <LinkTrace
                     href="https://blog.ciaochaos.com/"
@@ -32,7 +32,7 @@ const PartFooter = () => (
                                  rel="noopener noreferrer" target="_blank">合作咨询</LinkTrace></span>
             </div>
 
-            <div className="Qr-footer-part">
+            <div style={{display: "none"}} className="Qr-footer-part">
                 <strong>更多产品</strong>&emsp;
                 <span><LinkTrace href="https://mdnice.com" rel="noopener noreferrer"
                          target="_blank">mdnice 公众号排版</LinkTrace><span className="gray">&ensp;丨&ensp;</span></span>
@@ -44,7 +44,7 @@ const PartFooter = () => (
                          rel="noopener noreferrer" target="_blank">mpMath 公众号公式插件</LinkTrace></span>
             </div>
 
-            <div className="Qr-footer-part">
+            <div style={{display: "none"}} className="Qr-footer-part">
                 <strong>致谢</strong>&emsp;
                 <span><LinkTrace href="https://github.com/davidshimjs/qrcodejs" rel="noopener noreferrer"
                                  target="_blank">Sangmin, Shim</LinkTrace><span className="gray">&ensp;丨&ensp;</span></span>
