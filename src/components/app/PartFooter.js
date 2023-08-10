@@ -89,12 +89,8 @@ const PartFooter = () => (
             </div>
 
             <div className="Gray">
-                Copyright © {currentYear} QRBTF. 保留所有权利。<br/>
-                <LinkTrace href="https://beian.miit.gov.cn/"
-                   rel="noopener noreferrer" target="_blank">
-                    浙
-                    ICP 备 19005869 号
-                </LinkTrace>
+                Copyright © {currentYear} Tropley
+                
             </div>
         </div>
     </div>
