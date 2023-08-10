@@ -21,3 +21,12 @@ yarn-debug.log*
 yarn-error.log*
 
 /.idea/workspace.xml
+
+
+**.env
+**.DS_Store
+**.vercel
+**.git
+.vercel
+
+.vercel
