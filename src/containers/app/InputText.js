@@ -69,9 +69,7 @@ const InputText = ({dispatch}) => {
                 <div className="Qr-input-hint">
                     Upload a common QR code or enter a URL
                 </div>
-                /*<a className="Qr-new-discord" href="https://discord.gg/V9CNuqYfte" target='_blank'>
-                    New! Click to join our Discord，AI QR code coming soon!
-                </a>*/
+                
             </div>
         </React.Fragment>);
 }
