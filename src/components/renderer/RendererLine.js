@@ -304,47 +304,47 @@ function getParamInfoLine() {
     return [
         {
             type: ParamTypes.SELECTOR,
-            key: '连线方向',
+            key: 'Connection direction',
             default: 2,
             choices: [
-                "左右",
-                "上下",
-                "纵横",
-                "回环",
-                "左上 — 右下",
-                "右上 — 左下",
-                "交叉"
+                "Left and Right",
+"Top and Bottom",
+"Vertical and Horizontal",
+"Loop",
+"Top Left — Bottom Right",
+"Top Right — Bottom Left",
+"Cross"
             ]
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '连线粗细',
+            key: 'Connection thickness',
             default: 50
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '连线不透明度',
+            key: 'Connection Opacity',
             default: 100,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'anchor style',
             default: 3,
             choices: [
-                "矩形",
-                "圆形",
-                "行星",
-                "圆角矩形",
+               "Rectangle",
+"Circle",
+"Planet",
+"Rounded Rectangle",
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '连线颜色',
+            key: 'Connection color',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'anchor point color',
             default: '#000000'
         }
     ];
@@ -354,47 +354,47 @@ function getParamInfoLine2() {
     return [
         {
             type: ParamTypes.SELECTOR,
-            key: '连线方向',
+            key: 'Connection direction',
             default: 6,
             choices: [
-                "左右",
-                "上下",
-                "纵横",
-                "回环",
-                "左上 — 右下",
-                "右上 — 左下",
-                "交叉"
+               "Left and Right",
+"Up and Down",
+"Vertical and Horizontal",
+"Loop",
+"Top Left — Bottom Right",
+"Top Right — Bottom Left",
+"Cross"
             ]
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '连线粗细',
+            key: 'Connection thickness',
             default: 50
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '连线不透明度',
+            key: 'Connection Opacity',
             default: 100,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'anchor style',
             default: 0,
             choices: [
-                "矩形",
-                "圆形",
-                "行星",
-                "圆角矩形",
+                "Rectangle",
+"Circle",
+"Planet",
+"Rounded Rectangle"
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '连线颜色',
+            key: 'Connection color',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'anchor point color',
             default: '#000000'
         }
     ];
@@ -411,9 +411,9 @@ export const RendererLine2= createRenderer({
 });
 
 RendererLine.detail = (
-    <div>连连看，可选方向</div>
+    <div>Lianliankan, optional direction</div>
 );
 
 RendererLine2.detail = (
-    <div>交错相连</div>
+    <div>Interlaced</div>
 );

@@ -119,12 +119,12 @@ function getParamInfo() {
     return [
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '圆圈颜色',
+            key: 'circle color',
             default: '#8ED1FC'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'anchor point color',
             default: '#0693E3'
         }
     ]
@@ -136,7 +136,7 @@ const RenderCircle = createRenderer({
 })
 
 RenderCircle.detail = (
-    <div>圆圆圈圈，气气泡泡</div>
+    <div>circle circle, air bubble</div>
 );
 
 export default RenderCircle

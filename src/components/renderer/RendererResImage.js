@@ -324,5 +324,5 @@ export default RendererResImage
 
 
 RendererResImage.detail = (
-    <div>满满科技感的重采样二值化像素点阵，有点东西</div>
+    <div>A resampled binarized pixel matrix full of technological sense, something</div>
 );
