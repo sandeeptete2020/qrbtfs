@@ -72,51 +72,52 @@ function getParamInfo() {
     return [
         {
             type: ParamTypes.UPLOAD_BUTTON,
-            key: '背景图片',
+            key: 'Background Image',
             default: defaultResImage,
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '对比度',
+            key: 'Contrast',
             default: 0
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '曝光',
+            key: 'Exposure',
             default: 0
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '小定位点样式',
+            key: 'Small Locator Style',
             default: 0,
             choices: [
-                "无",
-                "白",
-                "黑白",
+                "None",
+                "White",
+                "Black and White",
             ]
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '时钟样式',
+            key: 'Clock Style',
             default: 0,
             choices: [
-                "无",
-                "白",
-                "黑白",
+                "None",
+                "White",
+                "Black and White",
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点颜色',
+            key: 'Info Point Color',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'Locator Point Color',
             default: '#000000'
         },
     ];
 }
+
 
 function getViewBox(qrcode) {
     if (!qrcode) return '0 0 0 0';
@@ -324,5 +325,5 @@ export default RendererResImage
 
 
 RendererResImage.detail = (
-    <div>A resampled binarized pixel matrix full of technological sense, something</div>
+    <div>A resampled binarized pixel matrix full of technological sense</div>
 );

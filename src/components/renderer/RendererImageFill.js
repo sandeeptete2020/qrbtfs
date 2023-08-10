@@ -31,21 +31,22 @@ function getParamInfo() {
     return [
         {
             type: ParamTypes.UPLOAD_BUTTON,
-            key: '背景图片',
+            key: 'Background Image',
             default: defaultImage,
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '覆盖颜色',
+            key: 'Overlay Color',
             default: '#000000'
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '覆盖不透明度',
+            key: 'Overlay Opacity',
             default: 10,
         },
     ];
 }
+
 
 const RendererImageFill = createRenderer({
     listPoints: listPoints,
@@ -56,5 +57,6 @@ const RendererImageFill = createRenderer({
 export default RendererImageFill
 
 RendererImageFill.detail = (
-    <div>图像填充</div>
+    <div>Image Fill</div>
 );
+

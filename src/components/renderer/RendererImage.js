@@ -101,55 +101,56 @@ function getParamInfo() {
     return [
         {
             type: ParamTypes.UPLOAD_BUTTON,
-            key: '背景图片',
+            key: 'Background Image',
             default: defaultImage,
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '信息点样式',
+            key: 'Info Point Style',
             default: 0,
             choices: [
-                "矩形",
-                "圆形",
+                "Rectangle",
+                "Circle",
             ]
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点缩放',
+            key: 'Info Point Scale',
             default: 100
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '信息点不透明度',
+            key: 'Info Point Opacity',
             default: 100,
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点深色',
+            key: 'Info Point Dark Color',
             default: '#000000'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '信息点浅色',
+            key: 'Info Point Light Color',
             default: '#FFFFFF'
         },
         {
             type: ParamTypes.SELECTOR,
-            key: '定位点样式',
+            key: 'Locator Point Style',
             default: 0,
             choices: [
-                "矩形",
-                "圆形",
-                "行星",
+                "Rectangle",
+                "Circle",
+                "Planet",
             ]
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '定位点颜色',
+            key: 'Locator Point Color',
             default: '#000000'
         },
     ];
 }
+
 
 const RendererImage = createRenderer({
     listPoints: listPoints,
@@ -160,5 +161,5 @@ const RendererImage = createRenderer({
 export default RendererImage
 
 RendererImage.detail = (
-    <div>加了背景图，试试看还能扫描吗</div>
+    <div>Added a background image, try to scan it</div>
 );
