@@ -6,7 +6,7 @@ import QrbtfLogo from "../svg/QrbtfLogo";
 const PartHeader = () => (
     <div className="Qr-Centered">
         <div>
-            <h1 className="Qr-title"><QrbtfLogo className="Qr-title-svg" /></h1>
+            <h1 className="Qr-title">Tropley</h1>
         </div>
         <p className="Qr-subtitle">Parametric QR Code Generator{/* <sup className="Gray">测试版</sup>*/}</p>
         <InputText/>
