@@ -89,7 +89,8 @@ const PartFooter = () => (
             </div>
 
             <div className="Gray">
-                Copyright © {currentYear} Tropley
+                Copyright © {currentYear} Tropley <LinkTrace href="https://qrbtf.com"
+                                 rel="noopener noreferrer" target="_blank">QRBTF</LinkTrace>
                 
             </div>
         </div>
