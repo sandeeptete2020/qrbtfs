@@ -17,8 +17,8 @@ const PartStyles = ({ setParamInfo }) => {
         <div className="Qr-Centered title-margin">
             <div className="Qr-s-title">Styles</div>
             <div className="Qr-s-subtitle Qr-rel">
-                点击选择样式
-                {isPC() ? <div className="Qr-style-hint">拖拽滑动</div> : null}
+                Click to select a style
+                {isPC() ? <div className="Qr-style-hint">Drag and slide</div> : null}
             </div>
         </div>
         <ScrollContainer

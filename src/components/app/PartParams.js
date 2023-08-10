@@ -8,7 +8,7 @@ const PartParams = () => (
     <div className="Qr-titled-nobg">
         <div className="Qr-Centered title-margin">
             <div className="Qr-s-title">Parameters</div>
-            <p className="Qr-s-subtitle">参数调整</p>
+            
         </div>
         <div className="Qr-Centered">
             <div className="Qr-div-table">

@@ -51,7 +51,7 @@ const InputText = ({dispatch}) => {
                     />
                     <input
                         className="Qr-input big-input"
-                        placeholder="https://qrbtf.com"
+                        placeholder="https://example.com"
                         ref={textRef}
                         onBlur={(e) => {
                             handleInputUrl();
@@ -67,11 +67,11 @@ const InputText = ({dispatch}) => {
                     />
                 </div>
                 <div className="Qr-input-hint">
-                    上传普通二维码或输入网址
+                    Upload a common QR code or enter a URL
                 </div>
-                <a className="Qr-new-discord" href="https://discord.gg/V9CNuqYfte" target='_blank'>
+                /*<a className="Qr-new-discord" href="https://discord.gg/V9CNuqYfte" target='_blank'>
                     New! Click to join our Discord，AI QR code coming soon!
-                </a>
+                </a>*/
             </div>
         </React.Fragment>);
 }
