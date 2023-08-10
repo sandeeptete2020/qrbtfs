@@ -52,31 +52,32 @@ function getParamInfo() {
     return [
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '柱体高度',
+            key: 'Cylinder Height',
             default: 0.5,
         },
         {
             type: ParamTypes.TEXT_EDITOR,
-            key: '定位点柱体高度',
+            key: 'Locator Cylinder Height',
             default: 0.5,
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '上侧颜色',
+            key: 'Top Color',
             default: '#FF7F89'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '左侧颜色',
+            key: 'Left Color',
             default: '#FFD7D9'
         },
         {
             type: ParamTypes.COLOR_EDITOR,
-            key: '右侧颜色',
+            key: 'Right Color',
             default: '#FFEBF3'
         },
     ];
 }
+
 
 let defaultDrawIcon = function ({ qrcode, params, title, icon }) {
     if (!qrcode) return []
@@ -238,5 +239,5 @@ const Renderer25D = createRenderer({
 export default Renderer25D
 
 Renderer25D.detail = (
-    <div>通向三维的半路。可能有一点点难以识别</div>
+    <div>Halfway to "3 Dimensional". It might be a little difficult to recognize.</div>
 );

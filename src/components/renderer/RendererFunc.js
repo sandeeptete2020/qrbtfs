@@ -234,8 +234,9 @@ export const RendererFuncB= createRenderer({
 });
 
 RendererFuncA.detail = (
-    <div>点干扰</div>
+    <div>Point Interference</div>
 );
+
 
 RendererFuncB.detail = (
     <div>Line Interference</div>

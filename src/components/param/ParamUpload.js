@@ -10,7 +10,7 @@ const ParamUpload = ({ rendererIndex, paramIndex, onChange }) => (
             className="dl-btn ul-btn"
             style={{textAlign: "center"}}
         >
-            上传图片
+            upload image
         </label>
         <input
             type="file"
