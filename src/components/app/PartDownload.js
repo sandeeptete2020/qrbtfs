@@ -13,9 +13,9 @@ const WxMessage = () => {
     if (isWeiXin()) {
         return (
             <div className="note-font" id="wx-message-inner">
-                当前客户端不支持下载 SVG，<br />
-                请下载 JPG 并长按二维码保存。
-            </div>
+    This style does not support downloading SVG,<br />
+    please download JPG and long press to save the QR code.
+</div>
         )
     }
     return null;
@@ -42,7 +42,7 @@ const PartDownload = ({ value, downloadCount, onSvgDownload, onImgDownload }) =>
         <div className="Qr-Centered title-margin">
             <div className="Qr-s-title">Downloads</div>
             <p className="Qr-s-subtitle">
-                <span>下载二维码 — {value}</span>
+                <span>Download QR Code — {value}</span>
                 <CountComponent value={downloadCount} />
             </p>
         </div>

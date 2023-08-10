@@ -11,7 +11,7 @@ const IconParams = ({ icon, onBlur, onKeyPress }) => {
 
     if (getExactValue(enabled, 0) == 1) {
         components.push(
-            <FrameworkParam paramName={"图标源"}>
+            <FrameworkParam paramName={"Icon"}>
                 <ParamIconSrcViewer icon={icon} onChange={onBlur}/>
             </FrameworkParam>
         );
@@ -19,7 +19,7 @@ const IconParams = ({ icon, onBlur, onKeyPress }) => {
 
     if (getExactValue(enabled, 0) != 0) {
         components.push(
-            <FrameworkParam paramName={"图标缩放"}>
+            <FrameworkParam paramName={"Icon Scaling"}>
                 <input
                     type="number"
                     className="Qr-input small-input"
@@ -35,17 +35,18 @@ const IconParams = ({ icon, onBlur, onKeyPress }) => {
 
 const ParamIcon = ({icon, onBlur, onKeyPress}) => (
     <React.Fragment>
-        <FrameworkParam paramName={"图标"}>
+        <FrameworkParam paramName={"Icon"}>
             <select
                 className="Qr-select"
                 defaultValue={icon.enabled}
                 onChange={(e) => onBlur({...icon, enabled: e.target.value})}>
-                <option value={0}>无</option>
-                <option value={1}>自定义</option>
-                <option value={2}>微信 — 小</option>
-                <option value={3}>微信</option>
-                <option value={4}>微信支付</option>
-                <option value={5}>支付宝</option>
+               <option value={0}>None</option>
+<option value={1}>Custom</option>
+<option value={2}>WeChat - Small</option>
+<option value={3}>WeChat</option>
+<option value={4}>WeChat Pay</option>
+<option value={5}>Alipay</option>
+
             </select>
         </FrameworkParam>
         <IconParams icon={icon} onBlur={onBlur} onKeyPress={onKeyPress}/>
